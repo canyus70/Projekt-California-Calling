@@ -18,6 +18,10 @@ img {
   font-family: "inter";
   src: url(./../fonts/Inter/Inter-VariableFont_slnt\,wght.ttf);
 }
+a {
+  text-decoration: none;
+}
+
 .rsvp_button {
   border: 1px solid #fff;
   text-decoration: none;
@@ -104,7 +108,7 @@ header nav {
   font-size: 86px;
   font-style: normal;
   font-weight: 700;
-  line-height: 108px; /* 125.216% */
+  line-height: 108px;
   letter-spacing: -2.475px;
 }
 .hero2 .map_wrapper .statistik p:nth-of-type(3) {
@@ -270,6 +274,15 @@ header nav {
 
 .golden_bear {
   background-color: #000;
+  height: 180vh;
+}
+.golden_bear .nerv_nicht {
+  display: flex;
+}
+.golden_bear .nerv_nicht .Übers_gb {
+  width: 300px;
+  height: 100px;
+  padding: 300px 0px 0 100px;
 }
 .golden_bear .nerv_nicht .Übers_gb p {
   color: #FFF;
@@ -288,7 +301,10 @@ header nav {
   font-weight: 700;
   line-height: 80px;
 }
-.golden_bear .nerv_nicht .Übers_gb .text_bear p:nth-of-type(1) {
+.golden_bear .nerv_nicht .text_bear {
+  padding: 300px 300px 0 300px;
+}
+.golden_bear .nerv_nicht .text_bear p:nth-of-type(1) {
   color: #FFF;
   font-family: "inter";
   font-size: 30px;
@@ -297,7 +313,7 @@ header nav {
   line-height: 32px;
   letter-spacing: -0.4px;
 }
-.golden_bear .nerv_nicht .Übers_gb .text_bear p:nth-of-type(2) {
+.golden_bear .nerv_nicht .text_bear p:nth-of-type(2) {
   color: #FFF;
   font-family: "work_sans";
   font-size: 18px;
@@ -306,26 +322,144 @@ header nav {
   line-height: 30px;
   letter-spacing: -0.4px;
 }
-.golden_bear .nerv_nicht .bear_bilder .container_relative2 {
+.golden_bear .bear_bilder .container_relative2 {
   position: relative;
 }
-.golden_bear .nerv_nicht .bear_bilder .container_relative2 img:nth-of-type(1) {
+.golden_bear .bear_bilder .container_relative2 img:nth-of-type(1) {
   position: absolute;
-  width: 30px;
-  height: 30px;
-  top: 400px;
+  width: 730px;
+  height: 730px;
+  top: 300px;
   right: 0px;
   bottom: 50px;
-  left: 70%;
+  left: 100px;
 }
-.golden_bear .nerv_nicht .bear_bilder .container_relative2 img:nth-of-type(2) {
+.golden_bear .bear_bilder .container_relative2 img:nth-of-type(2) {
   position: absolute;
+  width: 360px;
+  height: 470px;
+  top: 500px;
+  right: 0px;
+  bottom: 0px;
+  left: 600px;
+}
+
+.animation1 {
+  width: 100%;
+  height: 100px;
+  position: relative;
+}
+.animation1 img {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top: -200px;
+  right: -25px;
+  bottom: 0px;
+  left: 1000px;
+}
+
+.poppy_bear {
+  height: 200vh;
+}
+.poppy_bear .Übers_poppy {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  padding: 0px 0px 0 100px;
+  text-align: left;
+}
+.poppy_bear .Übers_poppy div p {
+  color: #000;
+  font-family: "work_sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.4px;
+}
+.poppy_bear .Übers_poppy div h2 {
+  color: #000;
+  font-family: "inter";
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 80px;
+}
+.poppy_bear .Übers_poppy .text_poppy {
+  padding: 0px 300px 0 300px;
+}
+.poppy_bear article .container_relative3 div {
+  position: relative;
+}
+.poppy_bear article .container_relative3 div img:nth-of-type(2) {
+  width: 730px;
+  height: 730px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 600px;
+}
+.poppy_bear article .container_relative3 div img:nth-of-type(1) {
+  position: absolute;
+  width: 360px;
+  height: 470px;
+  top: 100px;
+  right: 0px;
+  bottom: 0px;
+  left: 300px;
+}
+
+footer {
+  background-color: #000;
+}
+footer section {
+  width: 600px;
+  padding-left: 100px;
+}
+footer section p:nth-of-type(1) {
+  padding-top: 100px;
+  color: #FFF;
+  font-family: "work_sans";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+footer section p:nth-of-type(2) {
+  color: #FFF;
+  font-family: "inter";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 46px;
+}
+footer nav .soziale_flex {
+  display: flex;
+  padding-top: 50px;
+  padding-left: 100px;
+}
+footer nav .soziale_flex img {
   width: 30px;
   height: 30px;
-  top: 400px;
-  right: 0px;
-  bottom: 50px;
-  left: 70%;
+}
+footer nav .logo_flex {
+  display: flex;
+  justify-content: flex-end;
+}
+footer nav .logo_flex img {
+  width: 100px;
+  height: 60px;
+}
+footer nav p {
+  color: #FFF;
+  font-family: "inter";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 46px;
+  padding-left: 100px;
 }
 
 /*# sourceMappingURL=style.css.map */

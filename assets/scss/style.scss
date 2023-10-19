@@ -21,6 +21,10 @@ img {
     src: url(./../fonts/Inter/Inter-VariableFont_slnt\,wght.ttf);
 }
 
+a {
+    text-decoration: none;
+}
+
 // ########## Button ##############
 
 .rsvp_button {
@@ -124,7 +128,7 @@ header {
                     font-size: 86px;
                     font-style: normal;
                     font-weight: 700;
-                    line-height: 108px; /* 125.216% */
+                    line-height: 108px;
                     letter-spacing: -2.475px;
                 }
                     
@@ -324,10 +328,17 @@ header {
 
 .golden_bear {
     background-color: #000;
+    height: 180vh;
 
     .nerv_nicht {
+        display: flex;
+
 
         .Übers_gb {
+            width: 300px;
+            height: 100px;
+            padding: 300px 0px 0 100px;
+
 
             p {
             color: #FFF;
@@ -347,36 +358,38 @@ header {
             font-weight: 700;
             line-height: 80px;
             }
-
-        .text_bear {
-
-            p {
-
-                &:nth-of-type(1) {
-                color: #FFF;
-                font-family: "inter";
-                font-size: 30px;
-                font-style: normal;
-                font-weight: 700;
-                line-height: 32px;
-                letter-spacing: -0.40px;
-                }
-
-                &:nth-of-type(2) {
-                color: #FFF;
-                font-family: "work_sans";
-                font-size: 18px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: 30px;
-                letter-spacing: -0.40px;
-                }
-            }
-        }
-
     }
 
+    .text_bear {
+        padding: 300px 300px 0 300px;
 
+
+
+        p {
+
+            &:nth-of-type(1) {
+            color: #FFF;
+            font-family: "inter";
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 32px;
+            letter-spacing: -0.40px;
+            }
+
+            &:nth-of-type(2) {
+            color: #FFF;
+            font-family: "work_sans";
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 30px;
+            letter-spacing: -0.40px;
+            }
+        }
+    }
+
+    }
     .bear_bilder {
 
         .container_relative2 {
@@ -386,30 +399,185 @@ header {
 
                 &:nth-of-type(1) {
                     position: absolute;
-                    width: 30px;
-                    height: 30px;
-                    top: 400px;
+                    width: 730px;
+                    height: 730px;
+                    top: 300px;
                     right: 0px;
                     bottom: 50px;
-                    left: 70%;
+                    left:100px;
                 }   
 
                 &:nth-of-type(2) {
                     position: absolute;
-                    width: 30px;
-                    height: 30px;
-                    top: 400px;
+                    width: 360px;
+                    height: 470px;
+                    top: 500px;
                     right: 0px;
-                    bottom: 50px;
-                    left: 70%;
+                    bottom: 0px;
+                    left: 600px;
                 }
             }
         }
 
     }
+    
+}
+
+
+// ############### Erste Animation ########
+.animation1 {
+    width: 100%;
+    height: 100px;
+    position: relative;
+
+
+    img {
+        width: 400px;
+        height: 400px;
+        position: absolute;
+        top: -200px;
+        right: -25px;
+        bottom: 0px;
+        left: 1000px;
+    }
+}
+
+
+// ######### Section Poppy Bear #######
+
+
+.poppy_bear {
+    height: 200vh;
+    .Übers_poppy {
+        display: flex;
+        align-items: center;
+        height: 100vh;
+        padding: 0px 0px 0 100px;
+        text-align: left;
+
+
+
+        
+        div {
+            p {
+                color: #000;
+                font-family: "work_sans";
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 24px; 
+                letter-spacing: -0.40px;
+                }
+        
+                h2 {
+                color: #000;
+                font-family: "inter";
+                font-size: 80px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 80px;
+                }
+
+        }
+        .text_poppy {
+            padding: 00px 300px 0 300px;
+
+
+        }
+    }
+
+    article {
+
+        .container_relative3 {
+            div {
+                position: relative;
+
+                img {
+
+                    &:nth-of-type(2){
+                        width: 730px;
+                        height: 730px;
+                        position: absolute;
+                        top: 0px;
+                        right: 0px;
+                        bottom: 0px;
+                        left: 600px;
+                    }
+
+                    &:nth-of-type(1) {
+                        position: absolute;
+                        width: 360px;
+                        height: 470px;
+                        top: 100px;
+                        right: 0px;
+                        bottom: 0px;
+                        left: 300px;
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+footer {
+    background-color: #000;
+    section {
+        width: 600px;
+        padding-left: 100px;
+        p {
+            &:nth-of-type(1){
+                padding-top: 100px;
+                color: #FFF;
+            font-family: "work_sans";
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            }
+            &:nth-of-type(2){
+            color: #FFF;
+            font-family: "inter";
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 46px; 
+            }
+        }
 
     }
-    
+    nav {
 
+        .soziale_flex {
+            display: flex;
+            padding-top: 50px;
+            padding-left: 100px;
+
+            img {
+                width: 30px;
+                height: 30px;
+            }
+        }
+        .logo_flex {
+            display: flex;
+            justify-content: flex-end;
+            img {
+                width: 100px;
+                height: 60px;
+
+            }
+        }
+
+    p {
+        color: #FFF;
+        font-family: "inter";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 46px;
+        padding-left: 100px;
+
+    }
+    }
 }
 
